@@ -15,4 +15,9 @@ public class TodoList {
         return Todo.contains(task);
     }
 
+    public boolean remove(Task task) {
+        Todo.remove(task);
+        return Todo.contains(task);
+    }
+
 }
