@@ -17,4 +17,12 @@ class TodoListTest {
         Task task = new Task();
         Assertions.assertTrue(todoList.add(task));
     }
+
+    @Test
+    public void removeTaskTest() {
+        TodoList todoList = new TodoList();
+        Task task = new Task();
+        todoList.add(task);
+        Assertions.assertFalse(todoList.remove(task));
+    }
 }
